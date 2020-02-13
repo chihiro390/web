@@ -1,8 +1,12 @@
 <p>サンプル</p>
 <script type="text/javascript">
-　 document.addEventListener('click', function() {
-  
-    console.log('クリックされました');
-  
+
+const text = document.getElementById('text');
+ 
+text.addEventListener('click', function() {
+ 
+   console.log('クリックされました');
+ 
 });
+
 </script>
