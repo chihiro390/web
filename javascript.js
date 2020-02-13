@@ -1,3 +1,1 @@
-script type="text/javascript"
-      document.write("こんにちは。");
-/script
+document.write("こんにちは。");
