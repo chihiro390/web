@@ -5,7 +5,7 @@ document.addEventListener('click', function() {
   
 });
 
-myButton.onclick = function() {
+myButton.oneclick = function() {
   setUserName();
 }
 
