@@ -5,9 +5,9 @@ document.addEventListener('click', function() {
   
 });
 
-myButton.oneclick = function() {
-  setUserName();
-}
+document.getElementById("button").onclick = function() {
+  // ここに#buttonをクリックしたら発生させる処理を記述する
+};
 
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
