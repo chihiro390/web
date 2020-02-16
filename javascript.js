@@ -5,13 +5,6 @@ document.addEventListener('click', function() {
   
 });
 
-myButton.onclick = function() {
-  setUserName();
-}
-
-var myButton = document.querySelector('button');
-var myHeading = document.querySelector('h1');
-
 function setUserName() {
   var myName = prompt('あなたの好きな食べ物を教えてください');
   localStorage.setItem('name', myName);
@@ -24,3 +17,11 @@ if(!localStorage.getItem('name')) {
   var storedName = localStorage.getItem('name');
   myHeading.textContent = '' + storedName;
 }
+
+myButton.onclick = function() {
+  setUserName();
+}
+
+var myButton = document.querySelector('button');
+var myHeading = document.querySelector('h1');
+
