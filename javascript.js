@@ -6,13 +6,14 @@ document.addEventListener('click', function() {
 });
 
 var myButton = document.querySelector('button');
-var myHeading = document.querySelector('b1');
+var myHeading = document.createElement('p');
 
 
 function setUserName() {
   var myName = prompt('あなたの好きな食べ物を教えてください');
   localStorage.setItem('name', myName);
-  myHeading.textContent = 'おいしいの？' + myName;
+  myHeading.textContent = 'おいしいの？';
+  document.body.appendChild(myHeading);
 }
           myButton.onclick = function() {
             setUserName();
@@ -25,7 +26,8 @@ if(!localStorage.getItem('name')) {
   var storedName = localStorage.getItem('name');
   myHeading.textContent ;
 }
-elem.textContent = text
 
-
+for(let i = 0; i < myHeading.length ; i++) {
+  myHeading[i].addEventListener('click', createParagraph);
+}
 
