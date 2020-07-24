@@ -1,0 +1,47 @@
+nav{
+    text-align: center;
+}
+
+nav{
+    background-color: green;
+    padding:10px;
+}
+
+nav{
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:inline-block;
+    width:10%;
+    min-width: 90px;
+    background-color: black;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 10000;
+}
+
+body{
+    padding-top: 80px;
+}
+
+.right{
+    text-align: right;
+}
+
+p{
+    display: block;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background: black;
+    position: absolute;
+    top: 120px;
+    left: 60;
+    transform: rotate(45deg);
+}
