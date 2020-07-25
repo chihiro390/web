@@ -28,8 +28,9 @@ body{
     padding-top: 80px;
 }
 
-.right{
+.contents{
     text-align: right;
+    background: skyblue;
 }
 
 p{
@@ -44,4 +45,17 @@ p{
     top: 120px;
     left: 60;
     transform: rotate(45deg);
+}
+
+.go-top{
+    position: fixed;
+    z-index: 1000;
+    display: block;
+    background-color: springgreen;
+    border-style: none;
+    text-align: center;
+    right: 1vw;
+    top: 90vh;
+    height: 3em;
+    width: 3em;
 }

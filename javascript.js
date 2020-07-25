@@ -1,33 +1,22 @@
-document.write("こんにちは。");
-document.addEventListener('click', function() {
-  
-    console.log('クリックされました');
-  
+gotop('js-button',400);
+
+function gotop(elem,duration){
+let target = document.getElementById(elem);
+target.addEventListener('click',function() {
+
+  let currentY = window.pageYOffset;
+  let step =duration/currentY > 1  ? 10 : 100;
+  let timeStep = duration/currentY * step;
+  let intervalID = setInterval(scrollUp, timeStep);
+
+  function scrollUp(){
+    currentY = window.pageYOffset;
+    if(currentY === 0){
+      clearInterval(intervalID);
+    }else{
+      scrollBy(0, -step);
+    }
+  }
+
 });
-
-var myButton = document.querySelector('button');
-var myHeading = document.createElement('p');
-
-
-function setUserName() {
-  var myName = prompt('あなたの好きな食べ物を教えてください');
-  localStorage.setItem('name', myName);
-  myHeading.textContent = 'おいしいの？';
-  document.body.appendChild(myHeading);
 }
-          myButton.onclick = function() {
-            setUserName();
-          }
-
-
-if(!localStorage.getItem('name')) {
-  setUserName();
-} else {
-  var storedName = localStorage.getItem('name');
-  myHeading.textContent ;
-}
-
-for(let i = 0; i < myHeading.length ; i++) {
-  myHeading[i].addEventListener('click', createParagraph);
-}
-
